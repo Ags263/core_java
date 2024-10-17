@@ -15,37 +15,34 @@ public class Array {
 		System.out.println(animal[i]);
 	}
 	
-	 int num[] = new int[500];
-     
-     num[0] = 100;
-     num[1] = 200;
-     num[2] = 300;
-     num[3] = 400;
-     num[4] = 500;
+	 // Step 1: Create a number array using the 'new' keyword
+    int num[] = new int[5];  // Array of size 5
+    
+    // Step 2: Initialize the array with values
+    num[0] = 10;
+    num[1] = 20;
+    num[2] = 30;
+    num[3] = 40;
+    num[4] = 50;
 
-     // Display the elements of the array
-     System.out.println("Array elements:");
-     for (int i = 0; i < 500; i++) {
-         System.out.println(num[i]);
-     }
+    // Step 3: Display the array elements
+    System.out.println("Array elements are: ");
+    for (int i = 0; i < 5; i++) {
+        System.out.println(num[i]);
+    }
+    
+    // Step 4: Find the largest element
+    int largest = num[0];  // Initialize the largest variable with the first element
 
-     // Find and display the largest element
-     int largest = findLargest(num);
-     System.out.println("The largest element in the array is: " + largest);
- }
+    for (int i = 1; i < num.length; i++) {
+        if (num[i] > largest) {
+            largest = num[i];  // Update largest if current element is larger
+        }
+    }
 
- // Method to find the largest element in an array
- public static int findLargest(int[] arr) {
-     int max = arr[0]; // Assume the first element is the largest
-
-     // Iterate through the array to find the maximum value
-     for (int i = 1; i < arr.length; i++) {
-         if (arr[i] > max) {
-             max = arr[i]; // Update max if current element is larger
-         }
-     }
-     return max; // Return the largest element
- }
+    // Step 5: Display the largest element
+    System.out.println("The largest number is: " + largest);
+}
 
 
 	}
