@@ -1,5 +1,5 @@
  
-# Digi-Wallet Project
+# Digital-Wallet-Hibernate-Project
 
 ## Overview
 
@@ -41,53 +41,6 @@ This Digital Wallet application is built using Java, Hibernate, and MySQL, follo
 
 * **Main:** Contains the main class for launching the application.
 
-## Setup and Installation
-
-**Prerequisites:**
-
-* Java 11+
-
-* Maven 3.x
-
-* MySQL Server
-
-* MySQL Workbench
-
-**How to Run:**
-
-* **Clone the repository:**
-
-```bash
-git clone https://github.com/your-username/digital-wallet.git
-
-cd digital-wallet
-```
-
-* **Configure MySQL Database:**
-
-    Create a MySQL database named digital_wallet.
-
-    Update your database credentials in hibernate.cfg.xml.
-
-* **Build the project:**
-```bash
-mvn clean install
-```
-* **Run the project:**
-```bash
-mvn exec:java -Dexec.mainClass="Main"
-```
-* **Database Configuration:**
-
-    Ensure that hibernate.cfg.xml is correctly set up to connect to your MySQL database:
-```xml
-<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/digital_wallet</property>
-
-<property name="hibernate.connection.username">your-username</property>
-
-<property name="hibernate.connection.password">your-password</property>
-```
-
 ## Usage
 
 **User Operations:**
@@ -122,10 +75,3 @@ mvn exec:java -Dexec.mainClass="Main"
 * **UI Integration:** Planning to add a modern UI using front-end frameworks.
 
 * **Spring Boot Integration:** Option to include Spring Boot for better modularization and web services.
-
-
-## Contributing
-
-Feel free to contribute by submitting a pull request. For major changes, please open an issue first to discuss what you would like to change.
-
-
